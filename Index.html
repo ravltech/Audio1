@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Image to Play Music</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pagal Shayar</h1>
+    <img id="playImage" src="https://i.postimg.cc/zBjVrbMR/474565854-1957018934708059-2493175491430036459-n.jpg" alt="Tap to Play">
+
+    <audio id="bgMusic">
+        <source src="https://raw.githubusercontent.com/ravltech/Audio1/main/song.mp3" type="audio/mpeg">  <!-- Use a direct .mp3 link -->
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        let isPlaying = false;
+        const audio = document.getElementById("bgMusic");
+        const playImage = document.getElementById("playImage");
+
+        playImage.addEventListener("click", async function () {
+            try {
+                if (!isPlaying) {
+                    await audio.play();  // Ensure play() is awaited to handle potential errors
+                    isPlaying = true;
+                } else {
+                    audio.pause();
+                    isPlaying = false;
+                }
+            } catch (error) {
+                console.error("Error playing audio:", error);
+            }
+        });
+    </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Image to Play Music</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pagal Shayar</h1>
+    <img id="playImage" src="https://i.postimg.cc/zBjVrbMR/474565854-1957018934708059-2493175491430036459-n.jpg" alt="Tap to Play">
+
+    <audio id="bgMusic">
+        <source src="/Voice 002-1 (online-audio-converter.com).mp3" type="audio/mpeg">  <!-- Use a direct .mp3 link -->
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        let isPlaying = false;
+        const audio = document.getElementById("bgMusic");
+        const playImage = document.getElementById("playImage");
+
+        playImage.addEventListener("click", async function () {
+            try {
+                if (!isPlaying) {
+                    await audio.play();  // Ensure play() is awaited to handle potential errors
+                    isPlaying = true;
+                } else {
+                    audio.pause();
+                    isPlaying = false;
+                }
+            } catch (error) {
+                console.error("Error playing audio:", error);
+            }
+        });
+    </script>
+
+</body>
+</html>
